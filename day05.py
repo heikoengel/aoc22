@@ -5,9 +5,9 @@ for stack in range(1, 10):
     stacks_p2[stack] = []
 
 with open("data05") as f:
-    for i in range(1, 9): # read lines 1-8
+    for i in range(1, 9):  # read lines 1-8
         line = f.readline()
-        for stack in range(1, 10): # pos 1-9
+        for stack in range(1, 10):  # pos 1-9
             pos = 1 + (4*(stack-1))
             if len(line) < pos:
                 continue
